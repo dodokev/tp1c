@@ -14,5 +14,8 @@ int main()
 
 	cv::destroyAllWindows();
 	std::cout << "AAAAAAAAAAAAAA";
+
+	std::cout << "c'est un test";
+
 	return 0;
 }
