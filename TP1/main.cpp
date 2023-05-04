@@ -16,6 +16,7 @@ int main()
 	std::cout << "AAAAAAAAAAAAAA";
 
 	std::cout << "c'est un test";
+	std::cout << "encore un test";
 
 	return 0;
 }
