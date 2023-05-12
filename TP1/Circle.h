@@ -1,13 +1,16 @@
 #pragma once
-#include "opencv2/opencv.hpp"
+#include "Forme.h"
 
 class Circle
+	:public Forme
 {
 private:
+	cv::Point center;
 	int diametre;
-public:
-	Circle(int _diametre);
 
-	int getDiametre();
+public:
+	Circle(cv::Point _center, bool _filled, cv::Scalar _color, int _edgewidth, int _diametre);
+
+	void draw(cv::Mat _image);
 };
 

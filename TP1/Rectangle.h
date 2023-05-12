@@ -1,20 +1,16 @@
 #pragma once
-
-#include "opencv2/opencv.hpp"
-#include "opencv2/highgui/highgui.hpp"
+#include "Forme.h"
 
 class Rectangle
+	:public Forme
 {
 private:
 	cv::Point depart;
 	cv::Point arrive;
-	bool filled;
-	cv::Scalar color;
-	int edgewidth;
 
 public:
-	Rectangle(cv::Point _depart, cv::Point _arrive, bool filled, cv::Scalar color, int _edgewidth);
+	Rectangle(cv::Point _depart, cv::Point _arrive, bool _filled, cv::Scalar _color, int _edgewidth);
 
-	void affiche(cv::Mat _image);
+	void draw(cv::Mat _image);
 };
 

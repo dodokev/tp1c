@@ -1,18 +1,17 @@
 #include "Circle.h"
 
-Circle::Circle(int _diametre)
+Circle::Circle(cv::Point _center, bool _filled, cv::Scalar _color, int _edgewidth, int _diametre)
+	:Forme(_filled, _color, _edgewidth), diametre(_diametre), center(_center)
 {
-	cv::Mat image = cv::Mat::zeros(500, 500, CV_8UC3);
-
-	cv::Point center(250, 250);
-	int radius = _diametre;
-	cv::circle(image, center, radius, cv::Scalar(0, 0, 255), 2);
-	cv::imshow("Cercle", image);
-	cv::waitKey(0);
-
 }
 
-int Circle::getDiametre()
+void Circle::draw(cv::Mat _image)
 {
-	return diametre;
+	double radius = diametre / 2;
+	if (getFilled() == true) {
+		cv::circle(_image, center, radius, getColor(), cv::FILLED);
+	}
+	else {
+		cv::circle(_image, center, radius, getColor(), getEdgewitdh());
+	}
 }
