@@ -1,6 +1,7 @@
 #include <iostream>
-#include "Rectangle.h"
-#include "Circle.h"
+#include "RectangleSFML.h"
+#include "CircleSFML.h"
+#include "FormeFactorySFML.h"
 #include "SFML/Graphics.hpp"
 
 int main() 
@@ -19,24 +20,26 @@ int main()
 	//display un des deux pour display tout
 	test1.display(image);
 	*/
-	sf::RenderWindow window(sf::VideoMode(1000, 1000), "TP trop bien");
 
-	Rectangle test1(window, 50,50,10,5,1,sf::Color(20,20,20), sf::Color(40, 40, 40));
-	Circle test2();
+	sf::RenderWindow window(sf::VideoMode(1000, 1000), "TP trop bien");
+	FormeFactorySFML factory;
+
+	std::shared_ptr<Forme> test1 =  factory.createRectangle(window, 400, 450,200,250, 10,sf::Color(255,0,0), sf::Color(0, 255, 0));
+	std::shared_ptr<Forme> test2 = factory.createCircle(window, 500, 500, 300, 10, sf::Color(0,0,255), sf::Color(255,255, 0));
 
 	while (window.isOpen())
 	{
 		window.clear(sf::Color::Black);
 
-		test1.draw();
-		test2.draw();
+		test1->draw();
+		test2->draw();
 
 		// check all the window's events that were triggered since the last iteration of the loop
 		sf::Event event;
 		while (window.pollEvent(event))
 		{
 			// "close requested" event: we close the window
-			if (event.type == sf::Event::Closed)
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) || event.type == sf::Event::Closed)
 				window.close();
 		}
 

@@ -5,12 +5,13 @@ class Forme
 {
 private:
 	sf::Color color;
-	int edgewidth;
+	float edgewidth;
 
 public:
-	Forme(sf::Color _color, int _edgewidth);
+	Forme(sf::Color _color, float _edgewidth);
+
 	sf::Color getColor();
-	int getEdgewitdh();
+	float getEdgewitdh();
 
 	virtual void draw() = 0;
 };
