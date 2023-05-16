@@ -1,20 +1,34 @@
 #pragma once
-
-#include "opencv2/opencv.hpp"
-#include "opencv2/highgui/highgui.hpp"
+#include "Forme.h"
+#include "SFML/Graphics.hpp"
 
 class Rectangle
+	:public Forme
 {
 private:
-	cv::Point depart;
-	cv::Point arrive;
-	bool filled;
-	cv::Scalar color;
-	int edgewidth;
+	sf::RenderWindow& fenetre;
+	int x;
+	int y;
+	int longueur;
+	int largeur;
+	float largeurBord;
+	sf::Color couleurFill;
+	sf::Color couleurBord;
+	std::string ID;
 
 public:
-	Rectangle(cv::Point _depart, cv::Point _arrive, bool filled, cv::Scalar color, int _edgewidth);
+	Rectangle(sf::RenderWindow& _fenetre , int _x , int _y , int _longueur , int _largeur , float _largeurBords , sf::Color _couleurFill , sf::Color _couleurBord);
 
-	void affiche(cv::Mat _image);
+	sf::RenderWindow& getFenetre();
+	int getX();
+	int getY();
+	int getLongueur();
+	int getLargeur();
+	float getLargeurBord();
+	sf::Color getCouleurFill();
+	sf::Color getCouleurBord();
+	std::string getID();
+
+	virtual void draw() = 0;
 };
 
