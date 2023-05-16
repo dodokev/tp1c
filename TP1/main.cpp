@@ -4,6 +4,7 @@
 
 int main() 
 {
+	//bijour bijour les amis
 	cv::Mat image = cv::Mat::zeros(500, 500, CV_8UC3);
 	//rectangle(point(depart), point(arrive), fill?, color(scalar), edgewidth)
 	Rectangle test1 = Rectangle(cv::Point(10, 10), cv::Point(300, 200), false, cv::Scalar(0, 0, 255), 10);
