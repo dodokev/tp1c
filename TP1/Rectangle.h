@@ -1,16 +1,23 @@
 #pragma once
 #include "Forme.h"
+#include "SFML/Graphics.hpp"
 
 class Rectangle
 	:public Forme
 {
 private:
-	cv::Point depart;
-	cv::Point arrive;
+	sf::RenderWindow& fenetre;
+	int x;
+	int y;
+	int longueur;
+	int largeur;
+	int largeurBord;
+	sf::Color couleurFill;
+	sf::Color couleurBord;
 
 public:
-	Rectangle(cv::Point _depart, cv::Point _arrive, bool _filled, cv::Scalar _color, int _edgewidth);
+	Rectangle(sf::RenderWindow& _fenetre , int _x , int _y , int _longueur , int _largeur , int _largeurBords , sf::Color _couleurFill , sf::Color _couleurBord);
 
-	void draw(cv::Mat _image);
+	void draw() override;
 };
 

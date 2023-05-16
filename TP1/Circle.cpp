@@ -1,17 +1,18 @@
 #include "Circle.h"
 
-Circle::Circle(cv::Point _center, bool _filled, cv::Scalar _color, int _edgewidth, int _diametre)
-	:Forme(_filled, _color, _edgewidth), diametre(_diametre), center(_center)
+Circle::Circle(sf::RenderWindow _fenetre, int _x, int _y, int _rayon, int _largeurBord, sf::Color _couleurFill, sf::Color _couleurBord)
+	:Forme(couleurFill, largeurBord), fenetre(_fenetre),x(_x), y(_y), rayon(_rayon), largeurBord(_largeurBord) , couleurFill(_couleurFill), couleurBord(_couleurBord)
 {
 }
 
-void Circle::draw(cv::Mat _image)
+void Circle::draw()
 {
-	double radius = diametre / 2;
-	if (getFilled() == true) {
-		cv::circle(_image, center, radius, getColor(), cv::FILLED);
-	}
-	else {
-		cv::circle(_image, center, radius, getColor(), getEdgewitdh());
-	}
+	sf::CircleShape cercle(rayon);
+	cercle.setOrigin(sf::Vector2f(rayon / 2, rayon / 2));
+	cercle.setPosition(sf::Vector2f(x, y));
+	cercle.setFillColor(couleurFill);
+	cercle.setOutlineThickness(largeurBord);
+	cercle.setOutlineColor(couleurBord);
+
+	fenetre.draw(cercle);
 }

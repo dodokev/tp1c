@@ -1,16 +1,11 @@
 #include "Forme.h"
 
-Forme::Forme(bool _filled, cv::Scalar _color, int _edgewidth)
-	:filled(_filled), color(_color), edgewidth(_edgewidth)
+Forme::Forme(sf::Color _color, int _edgewidth)
+	:color(_color), edgewidth(_edgewidth)
 {
 }
 
-bool Forme::getFilled()
-{
-	return filled;
-}
-
-cv::Scalar Forme::getColor()
+sf::Color Forme::getColor()
 {
 	return color;
 }
@@ -18,13 +13,4 @@ cv::Scalar Forme::getColor()
 int Forme::getEdgewitdh()
 {
 	return edgewidth;
-}
-
-void Forme::display(cv::Mat _image)
-{
-	cv::imshow("Formes", _image);
-
-	cv::waitKey();
-
-	cv::destroyAllWindows();
 }

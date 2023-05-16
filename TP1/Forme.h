@@ -1,22 +1,17 @@
 #pragma once
-#include "opencv2/opencv.hpp"
-#include "opencv2/highgui/highgui.hpp"
+#include "SFML/Graphics.hpp"
 
 class Forme
 {
 private:
-	bool filled;
-	cv::Scalar color;
+	sf::Color color;
 	int edgewidth;
 
 public:
-	Forme(bool _filled, cv::Scalar _color, int _edgewidth);
-
-	bool getFilled();
-	cv::Scalar getColor();
+	Forme(sf::Color _color, int _edgewidth);
+	sf::Color getColor();
 	int getEdgewitdh();
 
-	virtual void draw(cv::Mat _image) = 0;
-	void display(cv::Mat _image);
+	virtual void draw() = 0;
 };
 

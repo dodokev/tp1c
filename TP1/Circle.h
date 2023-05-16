@@ -1,16 +1,22 @@
 #pragma once
 #include "Forme.h"
+#include "SFML/Graphics.hpp"
 
 class Circle
 	:public Forme
 {
 private:
-	cv::Point center;
-	int diametre;
+	sf::RenderWindow& fenetre;
+	int x;
+	int y;
+	int rayon;
+	int largeurBord;
+	sf::Color couleurFill;
+	sf::Color couleurBord;
 
 public:
-	Circle(cv::Point _center, bool _filled, cv::Scalar _color, int _edgewidth, int _diametre);
+	Circle(sf::RenderWindow _fenetre , int _x , int _y , int _rayon , int _largeurBord , sf::Color _couleurFill , sf::Color _couleurBord);
 
-	void draw(cv::Mat _image);
+	void draw() override;
 };
 
