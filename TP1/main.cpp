@@ -22,6 +22,6 @@ int main()
 
 	std::cout << "c'est un test";
 	std::cout << "encore un test";
-
+	std::cout << "manger des tuiles";
 	return 0;
 }
