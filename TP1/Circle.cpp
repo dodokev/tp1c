@@ -1,9 +1,9 @@
 #include "Circle.h"
 
 Circle::Circle(sf::RenderWindow& _fenetre, int _x, int _y, float _rayon, float _largeurBord, sf::Color _couleurFill, sf::Color _couleurBord)
-	:Forme(couleurFill, largeurBord), fenetre(_fenetre),x(_x), y(_y), rayon(_rayon), largeurBord(_largeurBord) , couleurFill(_couleurFill), couleurBord(_couleurBord)
+	:Forme(couleurFill, largeurBord, ("Circle,_" + std::to_string(_x) + ",_" + std::to_string(_y) + ",_" + std::to_string(_rayon))), fenetre(_fenetre),x(_x), y(_y), rayon(_rayon), largeurBord(_largeurBord) , couleurFill(_couleurFill), couleurBord(_couleurBord)
 {
-	ID = ("Circle, " + std::to_string(_x) + ", " + std::to_string(_y) + ", " + std::to_string(_rayon));
+	
 }
 
 sf::RenderWindow& Circle::getFenetre()
@@ -39,11 +39,6 @@ sf::Color Circle::getCouleurFill()
 sf::Color Circle::getCouleurBord()
 {
 	return couleurBord;
-}
-
-std::string Circle::getID()
-{
-	return ID;
 }
 
 /*

@@ -137,6 +137,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Application.cpp" />
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="CircleSFML.cpp" />
     <ClCompile Include="Drawer.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="RectangleSFML.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Application.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleSFML.h" />
     <ClInclude Include="Drawer.h" />

@@ -14,7 +14,6 @@ private:
 	float largeurBord;
 	sf::Color couleurFill;
 	sf::Color couleurBord;
-	std::string ID;
 
 public:
 	Rectangle(sf::RenderWindow& _fenetre , int _x , int _y , int _longueur , int _largeur , float _largeurBords , sf::Color _couleurFill , sf::Color _couleurBord);
@@ -27,7 +26,6 @@ public:
 	float getLargeurBord();
 	sf::Color getCouleurFill();
 	sf::Color getCouleurBord();
-	std::string getID();
 
 	virtual void draw() = 0;
 };

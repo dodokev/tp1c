@@ -1,9 +1,9 @@
 #include "Rectangle.h"
 
 Rectangle::Rectangle(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, int _largeur, float _largeurBords, sf::Color _couleurFill, sf::Color _couleurBord)
-	:Forme(_couleurFill, _largeurBords) , fenetre(_fenetre), x(_x), y(_y), longueur(_longueur), largeur(_largeur), largeurBord(_largeurBords), couleurFill(_couleurFill), couleurBord(_couleurBord)
+	:Forme(_couleurFill, _largeurBords, ("Rectangle,_" + std::to_string(_x) + ",_" + std::to_string(_y) + ",_" + std::to_string(_longueur) + ",_" + std::to_string(_largeur))) , fenetre(_fenetre), x(_x), y(_y), longueur(_longueur), largeur(_largeur), largeurBord(_largeurBords), couleurFill(_couleurFill), couleurBord(_couleurBord)
 {
-	ID = ("Rectangle, " + std::to_string(_x) + ", " + std::to_string(_y) + ", " + std::to_string(_longueur) + ", " + std::to_string(_largeur));
+	
 }
 
 sf::RenderWindow& Rectangle::getFenetre()
@@ -44,11 +44,6 @@ sf::Color Rectangle::getCouleurFill()
 sf::Color Rectangle::getCouleurBord()
 {
 	return couleurBord;
-}
-
-std::string Rectangle::getID()
-{
-	return ID;
 }
 
 /*

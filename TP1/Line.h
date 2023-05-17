@@ -12,7 +12,6 @@ private:
 	float largeurLigne;
 	float rotation;
 	sf::Color couleurLigne;
-	std::string ID;
 
 public:
 	Line(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, float _largeurLigne, float _rotation, sf::Color _couleurLigne);
@@ -24,7 +23,6 @@ public:
 	float getLargeurLigne();
 	float getRotation();
 	sf::Color getCouleurLigne();
-	std::string getID();
 
     virtual void draw() = 0;
 };

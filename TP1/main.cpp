@@ -1,7 +1,5 @@
-#include <iostream>
-#include "FormeFactorySFML.h"
-#include "Drawer.h"
-#include "SFML/Graphics.hpp"
+
+#include "Application.h"
 
 int main() 
 {
@@ -18,7 +16,7 @@ int main()
 
 	//display un des deux pour display tout
 	test1.display(image);
-	*/
+	
 
 
 	sf::RenderWindow window(sf::VideoMode(1000, 1000), "TP trop bien");
@@ -50,6 +48,11 @@ int main()
 
 		window.display();
 	}
+	*/
+
+	Application app;
+
+	app.run();
 
 	return 0;
 }
