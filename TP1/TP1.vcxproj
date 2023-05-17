@@ -139,9 +139,12 @@
   <ItemGroup>
     <ClCompile Include="Circle.cpp" />
     <ClCompile Include="CircleSFML.cpp" />
+    <ClCompile Include="Drawer.cpp" />
     <ClCompile Include="Forme.cpp" />
     <ClCompile Include="FormeFactory.cpp" />
     <ClCompile Include="FormeFactorySFML.cpp" />
+    <ClCompile Include="Line.cpp" />
+    <ClCompile Include="LineSFML.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleSFML.cpp" />
@@ -149,9 +152,12 @@
   <ItemGroup>
     <ClInclude Include="Circle.h" />
     <ClInclude Include="CircleSFML.h" />
+    <ClInclude Include="Drawer.h" />
     <ClInclude Include="Forme.h" />
     <ClInclude Include="FormeFactory.h" />
     <ClInclude Include="FormeFactorySFML.h" />
+    <ClInclude Include="Line.h" />
+    <ClInclude Include="LineSFML.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectangleSFML.h" />
   </ItemGroup>

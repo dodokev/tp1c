@@ -14,3 +14,9 @@ std::shared_ptr<Forme> FormeFactorySFML::createCircle(sf::RenderWindow& _fenetre
 {
 	return std::make_shared<CircleSFML>(_fenetre, _x, _y, _rayon, _largeurBord, _couleurFill, _couleurBord);
 }
+
+std::shared_ptr<Forme> FormeFactorySFML::createLine(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, float _largeurLigne, float _rotation, sf::Color _couleurLigne)
+{
+	return std::make_shared<LineSFML>(_fenetre, _x, _y, _longueur, _largeurLigne, _rotation, _couleurLigne);
+}
+

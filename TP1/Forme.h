@@ -13,6 +13,7 @@ public:
 	sf::Color getColor();
 	float getEdgewitdh();
 
+	virtual std::string getID() = 0;
 	virtual void draw() = 0;
 };
 
