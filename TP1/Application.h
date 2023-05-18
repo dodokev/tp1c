@@ -14,6 +14,10 @@ private:
 public:
 	Application();
 
+	void fileRect(const std::vector<std::string>& vect);
+	void fileCirc(const std::vector<std::string>& vect);
+	void fileLine(const std::vector<std::string>& vect);
+
 	void run();
 };
 
