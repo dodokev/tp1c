@@ -38,7 +38,7 @@ int main()
 		//test1->draw();
 		//test2->draw();
 		drawer.draw();
-
+	
 		// check all the window's events that were triggered since the last iteration of the loop
 		sf::Event event;
 		while (window.pollEvent(event))

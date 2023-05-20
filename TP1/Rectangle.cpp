@@ -1,24 +1,10 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, int _largeur, float _largeurBords, sf::Color _couleurFill, sf::Color _couleurBord)
-	:Forme(_couleurFill, _largeurBords) , fenetre(_fenetre), x(_x), y(_y), longueur(_longueur), largeur(_largeur), largeurBord(_largeurBords), couleurFill(_couleurFill), couleurBord(_couleurBord)
-{
-	ID = ("Rectangle, " + std::to_string(_x) + ", " + std::to_string(_y) + ", " + std::to_string(_longueur) + ", " + std::to_string(_largeur));
-}
 
-sf::RenderWindow& Rectangle::getFenetre()
-{
-	return fenetre;
-}
 
-int Rectangle::getX()
+Rectangle::Rectangle(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, int _largeur, float _largeurBord, sf::Color _couleurFill, sf::Color _couleurBord)
+	:Forme(_fenetre, _largeurBord, _x, _y, ("Rectangle,_" + std::to_string(_x) + ",_" + std::to_string(_y) + ",_" + std::to_string(_longueur) + ",_" + std::to_string(_largeur))), longueur(_longueur), largeur(_largeur), couleurFill(_couleurFill), couleurBord(_couleurBord)
 {
-	return x;
-}
-
-int Rectangle::getY()
-{
-	return y;
 }
 
 int Rectangle::getLongueur()
@@ -31,10 +17,6 @@ int Rectangle::getLargeur()
 	return largeur;
 }
 
-float Rectangle::getLargeurBord()
-{
-	return largeurBord;
-}
 
 sf::Color Rectangle::getCouleurFill()
 {
@@ -46,10 +28,7 @@ sf::Color Rectangle::getCouleurBord()
 	return couleurBord;
 }
 
-std::string Rectangle::getID()
-{
-	return ID;
-}
+
 
 /*
 void Rectangle::draw()

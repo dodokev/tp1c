@@ -54,6 +54,9 @@
     <ClCompile Include="LineSFML.cpp">
       <Filter>Fichiers sources\SFML</Filter>
     </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Rectangle.h">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="LineSFML.h">
       <Filter>Fichiers d%27en-tête\SFML</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

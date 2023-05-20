@@ -1,16 +1,33 @@
 #include "Forme.h"
 
-Forme::Forme(sf::Color _color, float _edgewidth)
-	:color(_color), edgewidth(_edgewidth)
+
+
+Forme::Forme(sf::RenderWindow& _fenetre, float _largeurBord, int _x, int _y, std::string _ID)
+	:fenetre(_fenetre), largeurBord(_largeurBord), x(_x), y(_y), ID(_ID)
 {
 }
 
-sf::Color Forme::getColor()
+sf::RenderWindow& Forme::getFenetre()
 {
-	return color;
+	return fenetre;
 }
 
-float Forme::getEdgewitdh()
+float Forme::getLargeurBord()
 {
-	return edgewidth;
+	return largeurBord;
+}
+
+int Forme::getX()
+{
+	return x;
+}
+
+int Forme::getY()
+{
+	return y;
+}
+
+std::string Forme::getID()
+{
+	return ID;
 }

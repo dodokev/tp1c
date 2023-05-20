@@ -1,7 +1,7 @@
 #include "RectangleSFML.h"
 
-RectangleSFML::RectangleSFML(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, int _largeur, float _largeurBords, sf::Color _couleurFill, sf::Color _couleurBord)
-	:Rectangle(_fenetre, _x, _y, _longueur, _largeur, _largeurBords, _couleurFill, _couleurBord)
+RectangleSFML::RectangleSFML(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, int _largeur, float _largeurBord, sf::Color _couleurFill, sf::Color _couleurBord)
+	:Rectangle(_fenetre, _x, _y, _longueur, _largeur, _largeurBord, _couleurFill, _couleurBord)
 {
 }
 

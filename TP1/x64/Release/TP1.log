@@ -1,4 +1,19 @@
-﻿  LineSFML.cpp
+﻿  Circle.cpp
+  CircleSFML.cpp
+D:\Users\Kévin Vu\source\repos\TP1\TP1\CircleSFML.cpp(12,46): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Users\Kévin Vu\source\repos\TP1\TP1\CircleSFML.cpp(12,38): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+  Drawer.cpp
+  FormeFactory.cpp
+  FormeFactorySFML.cpp
+  LineSFML.cpp
 D:\Users\Kévin Vu\source\repos\TP1\TP1\LineSFML.cpp(10,50): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
           with
           [
@@ -15,9 +30,40 @@ D:\Users\Kévin Vu\source\repos\TP1\TP1\LineSFML.cpp(11,34): warning C4244: 'arg
               T=float
           ]
   main.cpp
+  RectangleSFML.cpp
+D:\Users\Kévin Vu\source\repos\TP1\TP1\RectangleSFML.cpp(10,69): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Users\Kévin Vu\source\repos\TP1\TP1\RectangleSFML.cpp(10,55): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Users\Kévin Vu\source\repos\TP1\TP1\RectangleSFML.cpp(11,67): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Users\Kévin Vu\source\repos\TP1\TP1\RectangleSFML.cpp(11,49): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Users\Kévin Vu\source\repos\TP1\TP1\RectangleSFML.cpp(12,49): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+D:\Users\Kévin Vu\source\repos\TP1\TP1\RectangleSFML.cpp(12,41): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
   Génération de code en cours
-  1 of 306 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  157 of 306 functions (51.3%) were compiled, the rest were copied from previous compilation.
+    20 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
   TP1.vcxproj -> D:\Users\Kévin Vu\source\repos\TP1\x64\Release\TP1.exe

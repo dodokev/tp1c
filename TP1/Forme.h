@@ -4,16 +4,22 @@
 class Forme
 {
 private:
-	sf::Color color;
-	float edgewidth;
+	sf::RenderWindow& fenetre;
+	float largeurBord;
+	int x;
+	int y;
+	std::string ID;
+
 
 public:
-	Forme(sf::Color _color, float _edgewidth);
+	Forme(sf::RenderWindow& _fenetre, float _largeurBord, int _x, int _y, std::string _ID);
 
-	sf::Color getColor();
-	float getEdgewitdh();
-
-	virtual std::string getID() = 0;
+	sf::RenderWindow& getFenetre();
+	float getLargeurBord();
+	int getX();
+	int getY();
+	std::string getID();
+	
 	virtual void draw() = 0;
 };
 

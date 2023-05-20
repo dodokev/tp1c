@@ -126,6 +126,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\SFML-2.5.1\include; D:\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -148,6 +149,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleSFML.cpp" />
+    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
@@ -160,6 +162,7 @@
     <ClInclude Include="LineSFML.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectangleSFML.h" />
+    <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

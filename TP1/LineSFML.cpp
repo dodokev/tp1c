@@ -7,10 +7,10 @@ LineSFML::LineSFML(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, fl
 
 void LineSFML::draw()
 {
-	sf::RectangleShape line(sf::Vector2f(getLongueur(), 5));
+	sf::RectangleShape line(sf::Vector2f(getLongueur(), 1));
 	line.setOrigin(sf::Vector2f(getX(), getY()));
 	line.setFillColor(getCouleurLigne());
-	line.setOutlineThickness(getLargeurLigne());
+	line.setOutlineThickness(getLargeurBord());
 	line.setOutlineColor(getCouleurLigne());
 	line.setRotation(getRotation());
 

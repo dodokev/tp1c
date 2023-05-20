@@ -6,28 +6,18 @@ class Rectangle
 	:public Forme
 {
 private:
-	sf::RenderWindow& fenetre;
-	int x;
-	int y;
 	int longueur;
 	int largeur;
-	float largeurBord;
 	sf::Color couleurFill;
 	sf::Color couleurBord;
-	std::string ID;
 
 public:
-	Rectangle(sf::RenderWindow& _fenetre , int _x , int _y , int _longueur , int _largeur , float _largeurBords , sf::Color _couleurFill , sf::Color _couleurBord);
+	Rectangle(sf::RenderWindow& _fenetre, int _x, int _y, int _longueur, int _largeur, float _largeurBord, sf::Color _couleurFill, sf::Color _couleurBord);
 
-	sf::RenderWindow& getFenetre();
-	int getX();
-	int getY();
 	int getLongueur();
 	int getLargeur();
-	float getLargeurBord();
 	sf::Color getCouleurFill();
 	sf::Color getCouleurBord();
-	std::string getID();
 
 	virtual void draw() = 0;
 };
