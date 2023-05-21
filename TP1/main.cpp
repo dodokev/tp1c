@@ -26,6 +26,7 @@ int main()
 	Drawer drawer;
 	drawer.addRectangle(window, 400, 450, 200, 250, 10, sf::Color(255, 0, 0), sf::Color(0, 255, 0));
 	drawer.addCircle(window, 500, 500, 300, 10, sf::Color(0, 0, 255), sf::Color(255, 255, 0));
+	drawer.addTriangle(window, 500, 500, 300, 10, sf::Color(25, 87, 255), sf::Color(200, 21, 50));
 	drawer.addLine(window, 250, 250, 400, 50, 45, sf::Color(255, 0, 0));
 
 	//std::shared_ptr<Forme> test1 =  factory.createRectangle(window, 400, 450,200,250, 10,sf::Color(255,0,0), sf::Color(0, 255, 0));

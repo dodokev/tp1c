@@ -150,6 +150,7 @@
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="RectangleSFML.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="TriangleSFML.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Circle.h" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="RectangleSFML.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="TriangleSFML.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
